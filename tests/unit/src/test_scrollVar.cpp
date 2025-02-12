@@ -41,7 +41,7 @@ SCENARIO( "Creating a ScrollVar", "[ScrollVar][Creation]" ) {
 		}
 		WHEN( "its max scroll value is set to 10" ) {
 			sv.SetMaxValue(10.0);
-			THEN( "the SrollVar is now scrollable and is at the min scroll" ) {
+			THEN( "the ScrollVar is now scrollable and is at the min scroll" ) {
 				CHECK(sv.Scrollable());
 				CHECK(sv.IsScrollAtMin());
 				CHECK_FALSE(sv.IsScrollAtMax());
